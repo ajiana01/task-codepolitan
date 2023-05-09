@@ -1,0 +1,137 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*Styles*/
+html {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body {
+    background-color: #529ffa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.table {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 25px;
+    width: 100%;
+    max-width: 960px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 20px 0;
+}
+.price-plan {
+    border-right: 1px solid lightblue;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.price-plan:last-child {
+    border: none;
+}
+.price-header {
+    color: lightslategray;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.price-feature {
+    margin: 50px 0 25px;
+    font-weight: bold;
+    color: #529ffa;
+}
+.item {
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    border-top: 1px solid lightblue;
+    padding: 15px 15px 10px;
+}
+.item:last-child {
+    border-bottom: 1px solid lightblue;
+}
+.price {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #1d76cd;
+    display: block;
+}
+.price-button {
+    border-radius: 8px;
+    border: 1px solid #529ffa;
+    padding: 15px 35px;
+    color: #529ffa;
+    margin-top: 25px;
+    cursor: pointer;
+    background-color: white;
+}
+.price-button:hover {
+    background-color: ghostwhite;
+}
+.diff {
+    background-color: #529ffa;
+    color: white;
+}
+.diff:hover{
+    background-color: #1d76cd;
+    color: white;
+}
+
+/*Media*/
+@media only screen and (max-width: 768px) {
+    .table {
+        flex-direction: column;
+    }
+    .price-plan {
+        border: none;
+        margin-right: 0;
+        padding-right: 0;
+        border-bottom: 2px solid #1d76cd;
+        padding-bottom: 20px;
+    }
+}
